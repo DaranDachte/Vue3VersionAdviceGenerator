@@ -1,7 +1,7 @@
 <script lang="ts">
 import { ref, onMounted } from 'vue'
 import ButtonSVG from '@/assets/img/ButtonSVG.svg'
-import DivideSVG from '@/assets/img/DivideSVG.svg' // собачка это плагин, который делает наш  путь до файла короче.
+import DivideSVG from '@/assets/img/DivideSVG.svg'
 type Advice = {
   id: number
   advice: string
@@ -23,6 +23,7 @@ export default {
       id: 0,
       advice: ''
     })
+    console.log(slip)
 
     const refreshAdvice = async () => {
       slip.value = await getData().then((data) => data.slip)
