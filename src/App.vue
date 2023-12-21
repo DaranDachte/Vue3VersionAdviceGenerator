@@ -59,8 +59,12 @@ export default {
         <div className="w-[12.25rem] h-[0.0625rem] bg-[#4F5D74]"></div>
       </div>
     </div>
-    <button @click="refreshAdvice" class="mt-[-2rem]">
-      <img :src="ButtonSVG" alt="Button SVG" />
-    </button>
+    <div
+      class="mt-[-2rem] flex rounded-full hover:cursor-pointer bg-transparent border-none hover:shadow-[0px_0px_25px_#53ffaa]"
+    >
+      <button @click="refreshAdvice">
+        <img :src="ButtonSVG" alt="Button SVG" />
+      </button>
+    </div>
   </div>
 </template>
